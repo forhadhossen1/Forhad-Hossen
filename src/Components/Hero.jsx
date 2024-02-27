@@ -2,9 +2,11 @@ import herobg from '../assets/herobg.png';
 
 const Hero = () => {
     return (
-        <div className='bg-cover bg-center h-[90vh]' style={{ backgroundImage: `url(${herobg})` }}>
-            <div className='max-w-screen-xl mx-auto'>
+        <div className='bg-cover bg-center h-[120vh]' style={{ backgroundImage: `url(${herobg})` }}>
+            <div className='max-w-screen-xl mx-auto pt-16'>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis cumque mollitia numquam, in et temporibus at facilis exercitationem labore adipisci quaerat quae autem, aperiam dicta beatae, assumenda voluptatibus minima eligendi!</p>
+
             </div>
         </div>
     );
