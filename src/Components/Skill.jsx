@@ -124,7 +124,7 @@ const Skill = () => {
 
                 </div>
                 <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium consectetur optio enim! Aliquam, soluta quidem. Quidem assumenda laboriosam harum, esse aut nam ipsum? Fugiat omnis quod repellendus sapiente architecto.
+               
                     </p>
             </div>
         </div>
