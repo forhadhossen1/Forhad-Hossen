@@ -1,5 +1,5 @@
 import Tilt from 'react-parallax-tilt';
-import { FaBootstrap, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { IoIosMore } from "react-icons/io";
 import { SiExpress, SiFirebase, SiMongodb, SiReactrouter, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -121,7 +121,11 @@ const Skill = () => {
                             <h1 className="text-3xl font-bold"><IoIosMore className='text-8xl text-black text-center'></IoIosMore >Others..</h1>
                         </div>
                     </Tilt>
+
                 </div>
+                <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium consectetur optio enim! Aliquam, soluta quidem. Quidem assumenda laboriosam harum, esse aut nam ipsum? Fugiat omnis quod repellendus sapiente architecto.
+                    </p>
             </div>
         </div>
     );
