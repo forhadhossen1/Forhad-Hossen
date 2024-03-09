@@ -13,12 +13,12 @@ const Skill = () => {
         <div>
             <div className="max-w-screen-xl mx-auto">
 
-                <div className='my-12 flex justify-between'>
-                    <div className='flex-1'>
+                <div className='my-12 flex flex-col md:flex-row justify-between'>
+                    <div className='p-3'>
                         <h1 className='text-4xl md:text-6xl font-bold'>Skill</h1>
                     </div>
 
-                    <div className='flex-1'>
+                    <div className='p-3 '>
                         <ReactCloud></ReactCloud>
                     </div>
                 </div>
