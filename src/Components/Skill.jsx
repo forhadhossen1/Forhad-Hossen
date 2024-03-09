@@ -4,12 +4,25 @@ import { IoIosMore } from "react-icons/io";
 import { SiExpress, SiFirebase, SiMongodb, SiReactrouter, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import './Skill.css'
+import ReactCloud from './ReactCloud';
 
 
 const Skill = () => {
+
     return (
         <div>
             <div className="max-w-screen-xl mx-auto">
+
+                <div className='my-12 flex justify-between'>
+                    <div className='flex-1'>
+                        <h1 className='text-4xl md:text-6xl font-bold'>Skill</h1>
+                    </div>
+
+                    <div className='flex-1'>
+                        <ReactCloud></ReactCloud>
+                    </div>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-5 p-3">
 
                     <Tilt className='glass'>
@@ -123,9 +136,6 @@ const Skill = () => {
                     </Tilt>
 
                 </div>
-                <p>
-               
-                    </p>
             </div>
         </div>
     );
