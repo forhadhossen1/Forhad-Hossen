@@ -86,7 +86,17 @@ const Hero = () => {
 
                         </div>
 
-                        <img src={heroman} alt="heroman" className='w-1/2 md:w-full' />
+                        <motion.img
+                        initial = {{y: 300, opacity: 0}}
+                        animate = {{y: 0, opacity: 1}}
+                        transition={{
+                            delay: 0.2, 
+                            y: {type: "spring", stiffness: 60},
+                            opacity: {duration: 1},
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        src={heroman} alt="heroman" className='w-1/2 md:w-full' />
                     </div>
 
                     <motion.div variants={sliderVariants} initial="initial" animate="animate" className='font-extrabold text-4xl md:text-7xl lg:text-[20vh] text-nowrap absolute bottom-0 opacity-5 text-gray-200 w-full md:w-1/2'>

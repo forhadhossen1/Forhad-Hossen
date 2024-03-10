@@ -40,4 +40,8 @@
         font-size: 1em;
         font-weight: 400;
     }
+    .text-sphere {
+        flex-direction: column;
+        align-items: center;
+    }
 }

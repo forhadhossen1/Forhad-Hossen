@@ -28,8 +28,13 @@ const ReactCloud = () => {
         "GITHUB",
       ];
 
+      // let radius = 100;
+      // if(window.innerWidth >= 620){
+      //   radius = 250;
+      // }
+
       const options = {
-        radius: 250,
+        radius: 150,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: true,
