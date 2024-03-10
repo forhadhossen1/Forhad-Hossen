@@ -14,6 +14,7 @@ const ReactCloud = () => {
         "HTML",
         "CSS",
         "SASS",
+        "Bootstrap",
         "JavaScript",
         "React",
         "Tailwind",

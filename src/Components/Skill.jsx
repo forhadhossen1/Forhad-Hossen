@@ -13,9 +13,9 @@ const Skill = () => {
         <div>
             <div className="max-w-screen-xl mx-auto">
 
-                <div className='my-12 flex flex-col md:flex-row justify-between'>
+                <div className='my-12 flex flex-col md:flex-row justify-between items-center'>
                     <div className='p-3'>
-                        <h1 className='text-4xl md:text-6xl font-bold'>Skill</h1>
+                        <h1 className='text-4xl md:text-6xl font-bold  bg-gradient-to-r from-pink-500 to-blue-500 p-5 pr-9 rounded-r-full'>Skill..</h1>
                     </div>
 
                     <div className='p-3 '>
