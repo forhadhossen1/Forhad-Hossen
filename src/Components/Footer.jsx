@@ -50,25 +50,26 @@ const Footer = () => {
                             <span>©2024 All rights reserved</span>
                         </div>
                         <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-                            <a rel="noopener noreferrer" href="#" title="Email" className="flex items-center justify-center rounded-full">
+                            <a href="mailto:mr.forhad1030@gmail.com" target="_blank" title="Email" className="flex items-center justify-center rounded-full">
                                 <MdEmail className="text-3xl text-purple-600" />
                             </a>
 
-                            <a rel="noopener noreferrer" href="#" title="Github" className="flex items-center justify-center rounded-full ">
-                                <FaGithub className="text-3xl text-purple-600"/>
+                            <a href="https://github.com/forhadhossen1" target="_blank" title="Github" className="flex items-center justify-center rounded-full ">
+                                <FaGithub className="text-3xl text-purple-600" />
                             </a>
 
-                            <a rel="noopener noreferrer" href="#" title="Linkedin" className="flex items-center justify-center  rounded-full ">
-                               <FaLinkedin className="text-3xl text-purple-600"/>
+                            <a href="https://www.linkedin.com/in/forhadhossen1/" target="_blank" title="Linkedin" className="flex items-center justify-center  rounded-full ">
+                                <FaLinkedin className="text-3xl text-purple-600" />
                             </a>
 
-                            <a rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center justify-center rounded-full ">
-                                <FaFacebook className="text-3xl text-purple-600"/>
+                            <a href="https://www.facebook.com/profile.php?id=100085288886971" target="_blank" title="Facebook" className="flex items-center justify-center rounded-full ">
+                                <FaFacebook className="text-3xl text-purple-600" />
                             </a>
-                            
-                            <a rel="noopener noreferrer" href="#" title="Phone" className="flex items-center justify-center  rounded-full ">
-                               <FaWhatsapp className="text-3xl text-purple-600"/>
+
+                            <a href="tel:+8801306181767" target="_blank" title="Whatsapp" className="flex items-center justify-center rounded-full">
+                                <FaWhatsapp className="text-3xl text-purple-600" />
                             </a>
+
                         </div>
                     </div>
                 </div>
