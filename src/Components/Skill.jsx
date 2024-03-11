@@ -5,7 +5,7 @@ import { SiExpress, SiFirebase, SiMongodb, SiReactrouter, SiTailwindcss } from "
 import { TbBrandNextjs } from "react-icons/tb";
 import './Skill.css'
 import ReactCloud from './ReactCloud';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import ParticleBg from '../Utility/ParticleBg';
 
 
