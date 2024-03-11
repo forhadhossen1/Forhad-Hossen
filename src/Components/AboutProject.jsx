@@ -99,7 +99,6 @@ const AboutProject = () => {
                     </ul>
                 </div>
 
-
             </div>
 
         </div >
