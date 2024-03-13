@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import imae from "../assets/heroman.png"
 import { LuExternalLink, LuGithub } from "react-icons/lu";
 const ProjectCard = ({ project }) => {
     const { ProjectName, ProjectDescription, GitHubLink, LiveLink, Image } = project || {}
@@ -10,7 +9,7 @@ const ProjectCard = ({ project }) => {
                     <div className="border-8 border-purple-600 p-20 md:p-36 relative w-[200px] md:max-w-[350px]">
                     </div>
                     <div className="absolute -mt-56 md:-mt-80 ml-6">
-                        <img src={imae} alt="" className="bg-red-500 h-[200px] md:h-[300px]" />
+                        <img src={Image} alt="" className="bg-red-500 h-[200px] md:h-[300px] w-[200px] md:w-[320px]" />
                     </div>
                 </div>
 
