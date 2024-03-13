@@ -1,0 +1,27 @@
+[
+    {
+      "name": "John Doe",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus metus.",
+      "work": "Software Engineer",
+      "image": "https://example.com/john_doe.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "details": "Vestibulum ullamcorper odio sit amet semper commodo. Sed nec sollicitudin lorem.",
+      "work": "Graphic Designer",
+      "image": "https://example.com/jane_smith.jpg"
+    },
+    {
+      "name": "David Johnson",
+      "details": "Nullam at dapibus dui, vitae cursus nunc. Mauris ac accumsan eros.",
+      "work": "Marketing Manager",
+      "image": "https://example.com/david_johnson.jpg"
+    },
+    {
+      "name": "Emily Brown",
+      "details": "Fusce dapibus consequat velit vitae tempus. Vivamus vel quam est.",
+      "work": "Content Writer",
+      "image": "https://example.com/emily_brown.jpg"
+    }
+  ]
+  
