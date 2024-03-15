@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
 import aboutImage from "../../assets/heroman.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
@@ -28,9 +29,17 @@ const About = () => {
                 </div>
             </div>
 
-            <h3 className="text-center font-bold text-xl py-5">__Everybody should learn to program a computer because it teaches you how to think__</h3>
-            <p className="text-center">Steve Jobs..</p>
 
+            <section className="p-6">
+                <div className="container max-w-xl mx-auto">
+                    <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
+                        <blockquote className="max-w-lg text-lg italic font-medium text-center">"Everybody should learn to program a computer because it teaches you how to think__"</blockquote>
+                        <div className="text-center dark:text-gray-400">
+                            <p>Steve Jobs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div className="my-12">
                 <h2 className="text-3xl font-bold p-3">My Workflow</h2>
