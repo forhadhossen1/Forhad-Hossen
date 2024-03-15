@@ -8,7 +8,7 @@ const About = () => {
         <div className="pt-16 max-w-screen-xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold py-7">My Story....</h1>
+                    <h1 className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</h1>
                     <img src={aboutImage} alt="forhad image" />
                 </div>
 
@@ -43,7 +43,7 @@ const About = () => {
             </section>
 
             <div className="my-12">
-                <h2 className="text-3xl font-bold p-3">My Workflow</h2>
+                <h2 className="text-3xl font-bold p-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Workflow</h2>
                 <div className="py-12 p-3">
                     <ul className="timeline timeline-vertical  uppercase text-black text-sm md:text-xl">
                         <li>
@@ -79,7 +79,7 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold py-7">Skill....</h1>
+                    <h1 className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500 pb-9">Skill....</h1>
                     <img src="https://i.ibb.co/syDfnV7/3.jpg" alt=" image" />
                 </div>
 
