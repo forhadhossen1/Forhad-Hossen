@@ -64,6 +64,21 @@ const About = () => {
                     </ul>
                 </div>
             </div>
+
+            <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-4 my-12 p-3">
+                <div className="flex-1">
+                    <h1 className="text-4xl font-bold py-7">Skill....</h1>
+                    <img src="https://i.ibb.co/syDfnV7/3.jpg" alt=" image" />
+                </div>
+
+                <div className="flex-1">
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     );
 };
