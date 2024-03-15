@@ -74,7 +74,7 @@ const About = () => {
                 </div>
 
                 <div className="flex-1">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 uppercase">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 uppercase ">
                         <h2 className="text-xl font-bold flex items-center gap-2">HTML <FaHtml5 /></h2>
                         <h2 className="text-xl font-bold flex items-center gap-2">CSS <FaCss3 /></h2>
                         <h2 className="text-xl font-bold flex items-center gap-2">Tailwind<SiTailwindcss /></h2>
@@ -97,6 +97,8 @@ const About = () => {
 
                 </div>
             </div>
+
+            <p className="py-12 text-lg md:text-xl p-3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</p>
 
         </div>
     );
