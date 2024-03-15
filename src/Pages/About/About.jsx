@@ -18,6 +18,11 @@ const About = () => {
                         I strongly believe that working with your team will not only allow me to contribute something new and valuable but also enable me to apply my knowledge to enhance the company is potential. Moreover, I am committed to fostering a productive and friendly environment, as I bring positivity and motivation to any team I join.
 
                         I am a dedicated team player interested in making a meaningful contribution to your company while continuously growing and learning in the process.</p>
+
+                    <a href="https://drive.google.com/uc?export=download&id=1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ" download>
+                        <button className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4">Get Resume</button>
+                    </a>
+                    {/* https://drive.google.com/file/d/1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ/view?usp=drive_link */}
                 </div>
             </div>
 
