@@ -20,6 +20,45 @@ const About = () => {
                         I am a dedicated team player interested in making a meaningful contribution to your company while continuously growing and learning in the process.</p>
                 </div>
             </div>
+
+            <h3 className="text-center font-bold text-xl py-5">__Everybody should learn to program a computer because it teaches you how to think__</h3>
+            <p className="text-center">Steve Jobs..</p>
+
+
+            <div className="my-12">
+                <h2 className="text-3xl font-bold p-3">My Workflow</h2>
+                <div className="py-12 p-3">
+                    <ul className="timeline timeline-vertical  uppercase text-black text-sm md:text-xl">
+                        <li>
+                            <div className="timeline-start timeline-box">Requirements Analysis</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className="timeline-end timeline-box">Ask About Deadlines and Restrictions</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className="timeline-start timeline-box">Setting Up The Environment</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className="timeline-end timeline-box">Programming</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className="timeline-start timeline-box">Testing My Results</div>
+                        </li>
+                        <li>
+                            <hr />
+                            <div className="timeline-end timeline-box">Supporting and Scaling My Code</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
