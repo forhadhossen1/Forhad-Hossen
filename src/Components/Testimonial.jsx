@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import useTestimonial from "../Hooks/useTestimonial";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -42,7 +43,7 @@ const Testimonial = () => {
                         >
                             <div className="max-w-[450px] mx-auto">
 
-                                <motion.p
+                                <motion.blockquote
                                     initial={{ y: 200, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     transition={{
@@ -52,42 +53,44 @@ const Testimonial = () => {
                                         ease: "easeIn",
                                         duration: 1,
                                     }}
-                                    className="text-xl text-center mt-6">{testimonial.details}</motion.p>
+                                    className="text-xl text-center mt-6 italic">" {testimonial.details} "</motion.blockquote>
+
+
                                 <motion.div
-                                 initial={{ y: -200, opacity: 0 }}
-                                 whileInView={{ y: 0, opacity: 1 }}
-                                 transition={{
-                                     delay: 0.9,
-                                     y: { type: "spring", stiffness: 30 },
-                                     opacity: { duration: 2 },
-                                     ease: "easeIn",
-                                     duration: 1,
-                                 }}
-                                className="flex justify-center  pt-8">
+                                    initial={{ y: -200, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{
+                                        delay: 0.9,
+                                        y: { type: "spring", stiffness: 30 },
+                                        opacity: { duration: 2 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="flex justify-center  pt-8">
                                     <img src={testimonial.image} alt="" className="h-[120px] w-[120px] rounded-full" />
                                 </motion.div>
                                 <motion.h4
-                                 initial={{ y: -200, opacity: 0 }}
-                                 whileInView={{ y: 0, opacity: 1 }}
-                                 transition={{
-                                     delay: 0.9,
-                                     y: { type: "spring", stiffness: 30 },
-                                     opacity: { duration: 2 },
-                                     ease: "easeIn",
-                                     duration: 1,
-                                 }}
-                                className="text-2xl font-semibold text-pink-600 text-center pt-10">{testimonial.name}</motion.h4>
+                                    initial={{ y: -200, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{
+                                        delay: 0.9,
+                                        y: { type: "spring", stiffness: 30 },
+                                        opacity: { duration: 2 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="text-2xl font-semibold text-pink-600 text-center pt-10">{testimonial.name}</motion.h4>
                                 <motion.p
-                                 initial={{ y: -200, opacity: 0 }}
-                                 whileInView={{ y: 0, opacity: 1 }}
-                                 transition={{
-                                     delay: 0.9,
-                                     y: { type: "spring", stiffness: 30 },
-                                     opacity: { duration: 2 },
-                                     ease: "easeIn",
-                                     duration: 1,
-                                 }}
-                                className="text-md text-center "> {testimonial.work}</motion.p>
+                                    initial={{ y: -200, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{
+                                        delay: 0.9,
+                                        y: { type: "spring", stiffness: 30 },
+                                        opacity: { duration: 2 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="text-md text-center "> {testimonial.work}</motion.p>
                             </div>
                         </SwiperSlide>
                     ))
