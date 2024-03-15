@@ -23,7 +23,7 @@ const Testimonial = () => {
                         ease: "easeIn",
                         duration: 1,
                     }}
-                    className="text-4xl md:text-6xl font-bold text-center border-b-4 max-w-[250px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Testimonials</motion.h1>
+                    className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Testimonials</motion.h1>
             </div>
 
 
