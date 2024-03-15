@@ -2,9 +2,10 @@
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
 import aboutImage from "../../assets/heroman.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
+import Footer from "../../Components/Footer";
 const About = () => {
     return (
-        <div className="py-16 max-w-screen-xl mx-auto">
+        <div className="pt-16 max-w-screen-xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
                     <h1 className="text-4xl font-bold py-7">My Story....</h1>
@@ -109,6 +110,19 @@ const About = () => {
 
             <p className="py-12 text-lg md:text-xl p-3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</p>
 
+
+            <section className="p-6">
+                <div className="container max-w-xl mx-auto">
+                    <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
+                        <blockquote className="max-w-lg text-lg italic font-medium text-center">"Interested in working together? We should line up a time to chat."</blockquote>
+                        <blockquote className="max-w-lg text-lg italic font-medium text-center">"Have a project in mind?
+                            My inbox is always open to new opportunities.
+                            Feel free to contact me for any of your inquiries!"</blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <Footer></Footer>
         </div>
     );
 };
