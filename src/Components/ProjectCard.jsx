@@ -9,11 +9,11 @@ const ProjectCard = ({ project }) => {
         <div className="max-w-screen-xl mx-auto my-12">
             <div className="flex flex-col md:flex-row gap-12 justify-between my-12 items-center">
                 <motion.div
-                    initial={{ x: -200, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{
                         delay: 0.9,
-                        x: { type: "spring", stiffness: 30 },
+                        y: { type: "spring", stiffness: 30 },
                         opacity: { duration: 2 },
                         ease: "easeIn",
                         duration: 1,
@@ -27,10 +27,11 @@ const ProjectCard = ({ project }) => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ x: 200, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{
                         delay: 0.9,
+                        y: { type: "spring", stiffness: 30 },
                         opacity: { duration: 2 },
                         ease: "easeIn",
                         duration: 1,
