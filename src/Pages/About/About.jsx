@@ -1,4 +1,6 @@
+import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
 import aboutImage from "../../assets/heroman.png"
+import { SiExpress, SiFirebase, SiGit, SiGithub, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 const About = () => {
     return (
         <div className="py-16 max-w-screen-xl mx-auto">
@@ -72,8 +74,22 @@ const About = () => {
                 </div>
 
                 <div className="flex-1">
-                    <div>
-
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 uppercase">
+                        <h2 className="text-xl font-bold flex items-center gap-2">HTML <FaHtml5/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">CSS <FaCss3/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">Tailwind<SiTailwindcss/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">Bootstrap <FaBootstrap/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">JS <FaJs/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">React <FaReact/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">ReactRouter <SiReactrouter/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">Express <SiExpress/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">NodeJs <FaNodeJs/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">MongoDB <SiMongodb/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">NextJs<SiNextdotjs/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">FireBase<SiFirebase/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">Git<SiGit/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">GitHub<SiGithub/></h2>
+                        <h2 className="text-xl font-bold flex items-center gap-2">Sass<SiSass/></h2>
                     </div>
 
                 </div>
