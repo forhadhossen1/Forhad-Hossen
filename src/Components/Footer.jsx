@@ -38,10 +38,10 @@ const Footer = () => {
                             <p className="pb-1 text-xl font-bold">Quick Link</p>
                             <ul className="space-y-3">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Resume</a>
+                                    <a rel="noopener noreferrer" href="/about" className="hover:dark:text-violet-400">Resume</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Portfolio</a>
+                                    <a rel="noopener noreferrer" href="/portfolio" className="hover:dark:text-violet-400">Portfolio</a>
                                 </li>
                                 <li>
                                     <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Contact</a>
