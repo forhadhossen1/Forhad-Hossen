@@ -7,7 +7,7 @@ const MyProject = () => {
     const [projects] = useProject();
     const firstFiveProject = projects.slice(0, 3);
     return (
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto mb-20">
             <h1 className="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">My Project</h1>
 
             <div>
@@ -23,7 +23,7 @@ const MyProject = () => {
                 {
                     projects.length > 3 && (
                         <Link to='/portfolio'>
-                            <div className="flex justify-center my-12">
+                            <div className="flex justify-center my-16">
                                 <button className="text-md p-3 w-[200px] mt-4 rounded-sm text-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">See More</button>
                             </div>
                         </Link>

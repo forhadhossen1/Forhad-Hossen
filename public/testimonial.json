@@ -2,16 +2,16 @@
   {
     "_id": 1,
     "name": "John Doe",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus metus.",
+    "details": "Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Sed eget lectus metusdolor sit amet, consectetur adipiscing elit. Sed eget lectus metus.",
     "work": "Software Engineer",
-    "image": "https://i.ibb.co/LpPjWvd/pixelcut-export-1.png"
+    "image": "https://i.ibb.co/RCPKwZ3/user.jpg"
   },
   {
     "_id": 2,
     "name": "Jane Smith",
-    "details": "Vestibulum ullamcorper odio sit amet semper commodo. Sed nec sollicitudin lorem.",
+    "details": "Vestibulum dolor sit amet, consectetur adipiscing elit. Sed eget lectus metus ullamcorper odio sit amet semper commodo. Sed nec sollicitudin lorem.",
     "work": "Graphic Designer",
-    "image": "https://i.ibb.co/LpPjWvd/pixelcut-export-1.png"
+    "image": "https://i.ibb.co/RCPKwZ3/user.jpg"
   },
   {
     "_id": 3,
