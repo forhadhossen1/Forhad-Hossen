@@ -31,7 +31,7 @@ const About = () => {
             </div>
 
 
-            <section className="p-6">
+            <section className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
                         <blockquote className="max-w-lg text-lg italic font-medium text-center">"Everybody should learn to program a computer because it teaches you how to think__"</blockquote>
@@ -111,7 +111,7 @@ const About = () => {
             <p className="py-12 text-lg md:text-xl p-3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</p>
 
 
-            <section className="p-6">
+            <section className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg my-12">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
                         <blockquote className="max-w-lg text-lg italic font-medium text-center">"Interested in working together? We should line up a time to chat."</blockquote>
