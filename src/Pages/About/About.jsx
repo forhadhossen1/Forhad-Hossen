@@ -36,16 +36,16 @@ const About = () => {
 
                 <div className="flex-1">
                     <motion.p
-                    initial={{ y: 200, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                        delay: 0.9,
-                        y: { type: "spring", stiffness: 30 },
-                        opacity: { duration: 2 },
-                        ease: "easeIn",
-                        duration: 1,
-                    }}
-                    className="text-lg lg:text-xl">Hello, my name is Farhad. My passion for computer technology started at a young age and it has always brought me joy. As I grew up, I realized my true desire to immerse myself in the IT field, driven by its dynamic nature and the urge to stay updated with the latest advancements.
+                        initial={{ y: 200, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            y: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        className="text-lg lg:text-xl">Hello, my name is Farhad. My passion for computer technology started at a young age and it has always brought me joy. As I grew up, I realized my true desire to immerse myself in the IT field, driven by its dynamic nature and the urge to stay updated with the latest advancements.
 
                         The more I delve into this field, the more inspired I become, fueling my ambition to deepen my programming skills. I consider myself open-minded and determined, always eager to learn and adapt quickly to new challenges.
 
@@ -58,23 +58,33 @@ const About = () => {
 
                     <a href="https://drive.google.com/uc?export=download&id=1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ" download>
                         <motion.button
-                        initial={{ x: -200, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0.9,
-                            x: { type: "spring", stiffness: 30 },
-                            opacity: { duration: 2 },
-                            ease: "easeIn",
-                            duration: 1,
-                        }}
-                        className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4">Get Resume</motion.button>
+                            initial={{ x: -200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{
+                                delay: 0.9,
+                                x: { type: "spring", stiffness: 30 },
+                                opacity: { duration: 2 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4">Get Resume</motion.button>
                     </a>
                     {/* https://drive.google.com/file/d/1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ/view?usp=drive_link */}
                 </div>
             </div>
 
 
-            <section className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg">
+            <motion.section
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+                delay: 0.9,
+                y: { type: "spring", stiffness: 30 },
+                opacity: { duration: 2 },
+                ease: "easeIn",
+                duration: 1,
+            }}
+            className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
                         <blockquote className="max-w-lg text-lg italic font-medium text-center">"Everybody should learn to program a computer because it teaches you how to think__"</blockquote>
@@ -83,20 +93,20 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
             <div className="my-12">
                 <motion.h2
-                initial={{ x: -200, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                    delay: 0.9,
-                    x: { type: "spring", stiffness: 30 },
-                    opacity: { duration: 2 },
-                    ease: "easeIn",
-                    duration: 1,
-                }}
-                className="text-3xl font-bold p-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Workflow</motion.h2>
+                    initial={{ x: -200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        x: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="text-3xl font-bold p-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Workflow</motion.h2>
                 <div className="py-12 p-3">
                     <ul className="timeline timeline-vertical  uppercase text-black text-sm md:text-xl">
                         <li>
@@ -132,7 +142,17 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500 pb-9">Skill....</h1>
+                    <motion.h1
+                        initial={{ x: -200, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            x: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500 pb-9">Skill....</motion.h1>
                     <img src="https://i.ibb.co/syDfnV7/3.jpg" alt=" image" />
                 </div>
 
@@ -161,10 +181,30 @@ const About = () => {
                 </div>
             </div>
 
-            <p className="py-12 text-lg md:text-xl p-3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</p>
+            <motion.p
+
+                initial={{ y: 200, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    delay: 0.9,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 2 },
+                    ease: "easeIn",
+                    duration: 1,
+                }} className="py-12 text-lg md:text-xl -3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</motion.p>
 
 
-            <section className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg my-12">
+            <motion.section
+                initial={{ y: 200, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    delay: 0.9,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 2 },
+                    ease: "easeIn",
+                    duration: 1,
+                }}
+                className="-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg my-12">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
                         <blockquote className="max-w-lg text-lg italic font-medium text-center">"Interested in working together? We should line up a time to chat."</blockquote>
@@ -173,7 +213,7 @@ const About = () => {
                             Feel free to contact me for any of your inquiries!"</blockquote>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
             <Footer></Footer>
         </div>
