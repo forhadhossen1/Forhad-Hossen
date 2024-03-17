@@ -3,12 +3,24 @@ import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-ico
 import aboutImage from "../../assets/heroman.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 import Footer from "../../Components/Footer";
+import { motion } from "framer-motion";
+
 const About = () => {
     return (
         <div className="pt-16 max-w-screen-xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</h1>
+                    <motion.h1
+                        initial={{ y: 200, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            y: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</motion.h1>
                     <img src={aboutImage} alt="forhad image" />
                 </div>
 
