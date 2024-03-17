@@ -10,17 +10,7 @@ const About = () => {
         <div className="pt-16 max-w-screen-xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                    <motion.h1
-                        initial={{ x: -200, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0.9,
-                            x: { type: "spring", stiffness: 30 },
-                            opacity: { duration: 2 },
-                            ease: "easeIn",
-                            duration: 1,
-                        }}
-                        className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</motion.h1>
+                   
                     <motion.img
 
                         initial={{ x: -200, opacity: 0 }}
@@ -35,6 +25,18 @@ const About = () => {
                 </div>
 
                 <div className="flex-1">
+
+                <motion.h1
+                        initial={{ x: -200, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            x: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</motion.h1>
                     <motion.p
                         initial={{ y: 200, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
