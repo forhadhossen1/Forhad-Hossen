@@ -11,21 +11,41 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
                     <motion.h1
-                        initial={{ y: 200, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
+                        initial={{ x: -200, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
                         transition={{
                             delay: 0.9,
-                            y: { type: "spring", stiffness: 30 },
+                            x: { type: "spring", stiffness: 30 },
                             opacity: { duration: 2 },
                             ease: "easeIn",
                             duration: 1,
                         }}
                         className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Story....</motion.h1>
-                    <img src={aboutImage} alt="forhad image" />
+                    <motion.img
+
+                        initial={{ x: -200, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            x: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }} src={aboutImage} alt="forhad image" />
                 </div>
 
                 <div className="flex-1">
-                    <p className="text-lg lg:text-xl">Hello, my name is Farhad. My passion for computer technology started at a young age and it has always brought me joy. As I grew up, I realized my true desire to immerse myself in the IT field, driven by its dynamic nature and the urge to stay updated with the latest advancements.
+                    <motion.p
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        y: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="text-lg lg:text-xl">Hello, my name is Farhad. My passion for computer technology started at a young age and it has always brought me joy. As I grew up, I realized my true desire to immerse myself in the IT field, driven by its dynamic nature and the urge to stay updated with the latest advancements.
 
                         The more I delve into this field, the more inspired I become, fueling my ambition to deepen my programming skills. I consider myself open-minded and determined, always eager to learn and adapt quickly to new challenges.
 
@@ -33,10 +53,21 @@ const About = () => {
 
                         I strongly believe that working with your team will not only allow me to contribute something new and valuable but also enable me to apply my knowledge to enhance the company is potential. Moreover, I am committed to fostering a productive and friendly environment, as I bring positivity and motivation to any team I join.
 
-                        I am a dedicated team player interested in making a meaningful contribution to your company while continuously growing and learning in the process.</p>
+                        I am a dedicated team player interested in making a meaningful contribution to your company while continuously growing and learning in the process.</motion.p>
+
 
                     <a href="https://drive.google.com/uc?export=download&id=1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ" download>
-                        <button className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4">Get Resume</button>
+                        <motion.button
+                        initial={{ x: -200, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.9,
+                            x: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 2 },
+                            ease: "easeIn",
+                            duration: 1,
+                        }}
+                        className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4">Get Resume</motion.button>
                     </a>
                     {/* https://drive.google.com/file/d/1GMlBsbmCYlSmJolDJpFiBNGKirfjRPtZ/view?usp=drive_link */}
                 </div>
@@ -55,7 +86,17 @@ const About = () => {
             </section>
 
             <div className="my-12">
-                <h2 className="text-3xl font-bold p-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Workflow</h2>
+                <motion.h2
+                initial={{ x: -200, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    delay: 0.9,
+                    x: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 2 },
+                    ease: "easeIn",
+                    duration: 1,
+                }}
+                className="text-3xl font-bold p-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">My Workflow</motion.h2>
                 <div className="py-12 p-3">
                     <ul className="timeline timeline-vertical  uppercase text-black text-sm md:text-xl">
                         <li>
