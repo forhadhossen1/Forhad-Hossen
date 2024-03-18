@@ -22,13 +22,14 @@ const Contact = () => {
                         title: "Success, Send Your Message",
                         showConfirmButton: false,
                         timer: 1500
-                      });
+                    });
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                 },
             );
     };
+
 
     return (
         <div className='max-w-screen-xl mx-auto'>
