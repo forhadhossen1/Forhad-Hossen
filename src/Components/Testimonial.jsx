@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const Testimonial = () => {
     const [testimonials] = useTestimonial();
     return (
-        <div className="my-16 mt-24 max-w-screen-xl mx-auto">
+        <div className="my-16 mt-24 max-w-screen-xl mx-auto md:h-[80vh]">
 
             <div>
                 <motion.h1
