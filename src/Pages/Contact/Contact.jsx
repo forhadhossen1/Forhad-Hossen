@@ -35,17 +35,17 @@ const Contact = () => {
             </form> */}
 
 
-            <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-                <div className="flex flex-col justify-between">
+            <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
+                <div className="flex flex-col justify-between ">
                     <div className="space-y-2">
                         <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Lets talk!</h2>
                         <div className="dark:text-gray-400">Vivamus in nisl metus? Phasellus.</div>
                     </div>
                     <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
                 </div>
-                <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                <form ref={form} onSubmit={sendEmail} className="space-y-6 text-gray-600">
                     <div>
-                        <label className="text-sm">Full name</label>
+                        <label className="text-sm">Name</label>
                         <input id="name" type="text" name='user_name' placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
                     </div>
                     <div>
