@@ -1,6 +1,7 @@
-import { FaArrowRight, FaFacebook, FaGithub, FaLinkedin, FaLocationDot,FaWhatsapp } from "react-icons/fa6";
+import { FaArrowRight, FaFacebook, FaGithub, FaLinkedin, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail, MdOutlineAlternateEmail, MdPermPhoneMsg } from "react-icons/md";
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -11,30 +12,32 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-4">
                         <div className="pb-6 col-span-full md:pb-0 md:col-span-2">
                             <h2 className="text-4xl font-bold">Lets TALK</h2>
-                            <motion.button
-                            initial={{ x: -100, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
+                            <Link to='/contact'>
+                                <motion.button
+                                    initial={{ x: -100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{
+                                        delay: 0.6,
+                                        x: { type: "spring", stiffness: 40 },
+                                        opacity: { duration: 2 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4"> Click to Contact <FaArrowRight /></motion.button>
+                            </Link>
+                        </div>
+
+                        <motion.div
+                            initial={{ y: -100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{
                                 delay: 0.6,
-                                x: { type: "spring", stiffness: 40 },
+                                y: { type: "spring", stiffness: 30 },
                                 opacity: { duration: 2 },
                                 ease: "easeIn",
                                 duration: 1,
                             }}
-                            className="text-md p-3 mt-4 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center gap-4"> Click to Contact <FaArrowRight /></motion.button>
-                        </div>
-
-                        <motion.div
-                         initial={{ y: -100, opacity: 0 }}
-                         whileInView={{ y: 0, opacity: 1 }}
-                         transition={{
-                             delay: 0.6,
-                             y: { type: "spring", stiffness: 30 },
-                             opacity: { duration: 2 },
-                             ease: "easeIn",
-                             duration: 1,
-                         }}
-                        className="col-span-1 text-center md:text-left md:col-span-1 space-y-4">
+                            className="col-span-1 text-center md:text-left md:col-span-1 space-y-4">
                             <p className="pb-1 text-xl font-bold">Quick Link</p>
                             <ul className="space-y-3">
                                 <li>
@@ -51,16 +54,16 @@ const Footer = () => {
                         </motion.div>
 
                         <motion.div
-                         initial={{ y: 100, opacity: 0 }}
-                         whileInView={{ y: 0, opacity: 1 }}
-                         transition={{
-                             delay: 0.6,
-                             y: { type: "spring", stiffness: 30 },
-                             opacity: { duration: 2 },
-                             ease: "easeIn",
-                             duration: 1,
-                         }}
-                        className="col-span-1 text-center md:text-left md:col-span-1 space-y-3">
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{
+                                delay: 0.6,
+                                y: { type: "spring", stiffness: 30 },
+                                opacity: { duration: 2 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="col-span-1 text-center md:text-left md:col-span-1 space-y-3">
                             <p className="pb-1 text-2xl font-bold">Address</p>
                             <div className="flex gap-2 items-center">
                                 <FaLocationDot className="text-xl text-pink-600" />

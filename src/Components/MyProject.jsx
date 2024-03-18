@@ -35,7 +35,17 @@ const MyProject = () => {
                     projects.length > 3 && (
                         <Link to='/portfolio'>
                             <div className="flex justify-center my-16">
-                                <button className="text-md p-3 w-[200px] mt-4 rounded-sm text-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">See More</button>
+                                <motion.button
+                                   initial={{ x: -200, opacity: 0 }}
+                                   whileInView={{ x: 0, opacity: 1 }}
+                                   transition={{
+                                       delay: 0.9,
+                                       x: { type: "spring", stiffness: 20 },
+                                       opacity: { duration: 2 },
+                                       ease: "easeIn",
+                                       duration: 1,
+                                   }}
+                                className="text-md p-3 w-[200px] mt-4 rounded-sm text-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">See More</motion.button>
                             </div>
                         </Link>
                     )

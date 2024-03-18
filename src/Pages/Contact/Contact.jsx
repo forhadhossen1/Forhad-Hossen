@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import Swal from 'sweetalert2';
 import email from '../../assets/email.png';
+import { motion } from "framer-motion";
 
 const Contact = () => {
     const form = useRef();
@@ -33,7 +34,7 @@ const Contact = () => {
 
 
     return (
-        <div className='max-w-screen-xl mx-auto md:h-[90vh]'>
+        <div className='max-w-screen-xl mx-auto md:h-[100vh] py-12'>
 
             {/* <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
@@ -45,11 +46,31 @@ const Contact = () => {
                 <input type="submit" value="Send" />
             </form> */}
             <div>
-                <h1 className="text-4xl md:text-6xl text-center font-bold my-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500">Contact</h1>
+                <motion.h1
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        y: { type: "spring", stiffness: 50 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="text-4xl md:text-6xl text-center font-bold my-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500">Contact</motion.h1>
             </div>
 
             <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
-                <div className="flex flex-col justify-between ">
+                <motion.div
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        y: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="flex flex-col justify-between ">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold leading-tight lg:text-4xl p-3">Lets talk!</h2>
                         <div className="dark:text-gray-400 p-3">Have a project in mind?
@@ -57,8 +78,18 @@ const Contact = () => {
                             Feel free to contact me for any of your inquiries!</div>
                     </div>
                     <img src={email} alt="" className="p-3 md:h-64" />
-                </div>
-                <form ref={form} onSubmit={sendEmail} className="space-y-8 text-gray-600">
+                </motion.div>
+                <motion.form
+                    initial={{ y: 200, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        y: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    ref={form} onSubmit={sendEmail} className="space-y-8 text-gray-600">
                     <div>
                         <label className="text-md text-white">Name</label>
                         <input id="name" type="text" name='user_name' placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
@@ -72,7 +103,7 @@ const Contact = () => {
                         <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800" name='message'></textarea>
                     </div>
                     <button type="submit" className="w-full p-3 text-md font-bold tracking-wide uppercase rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">Send Message</button>
-                </form>
+                </motion.form>
             </div>
         </div>
     );

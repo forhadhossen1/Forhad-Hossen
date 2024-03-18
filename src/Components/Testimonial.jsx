@@ -57,7 +57,7 @@ const Testimonial = () => {
 
 
                                 <motion.div
-                                    initial={{ y: -200, opacity: 0 }}
+                                    initial={{ y: 200, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     transition={{
                                         delay: 0.9,
