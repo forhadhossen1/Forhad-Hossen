@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
-import aboutImage from "../../assets/heroman.png"
+import aboutImage from "../../assets/bulb.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 import Footer from "../../Components/Footer";
 import { motion } from "framer-motion";
@@ -21,7 +21,9 @@ const About = () => {
                             opacity: { duration: 2 },
                             ease: "easeIn",
                             duration: 1,
-                        }} src={aboutImage} alt="forhad image" />
+                        }} src={aboutImage}
+                        // className="md:h-[400px] w-full"
+                        alt="forhad image" />
                 </div>
 
                 <div className="flex-1">
