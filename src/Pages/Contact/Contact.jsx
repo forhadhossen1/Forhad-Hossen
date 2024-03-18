@@ -46,15 +46,15 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="space-y-6">
                     <div>
                         <label className="text-sm">Full name</label>
-                        <input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
+                        <input id="name" type="text" name='user_name' placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
                     </div>
                     <div>
                         <label className="text-sm">Email</label>
-                        <input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800" />
+                        <input id="email" type="email" name='user_email' className="w-full p-3 rounded dark:bg-gray-800" />
                     </div>
                     <div>
                         <label className="text-sm">Message</label>
-                        <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
+                        <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800" name='message'></textarea>
                     </div>
                     <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-gray-800">Send Message</button>
                 </form>
