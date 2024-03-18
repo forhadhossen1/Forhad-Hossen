@@ -7,7 +7,8 @@ const ProjectCard = ({ project }) => {
     const { ProjectName, ProjectDescription, GitHubLink, LiveLink, Image } = project || {}
     return (
         <div className="max-w-screen-xl mx-auto my-12">
-            <div className="flex flex-col md:flex-row gap-12 justify-between my-12 items-center">
+            <div className="flex flex-col md:flex-row gap-12 justify-between my-12 items-center ">
+            {/* bg-gradient-to-b from-indigo-500 py-5 */}
                 <motion.div
                     initial={{ y: 200, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
