@@ -23,6 +23,7 @@
     "react-tilt": "^1.0.2",
     "react-tsparticles": "^2.12.2",
     "sort-by": "^1.2.0",
+    "sweetalert2": "^11.10.6",
     "swiper": "^11.0.7",
     "TagCloud": "^2.4.0",
     "tsparticles": "^3.3.0",
