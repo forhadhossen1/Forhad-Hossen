@@ -57,6 +57,8 @@ const Contact = () => {
                         duration: 1,
                     }}
                     className="text-4xl md:text-6xl text-center font-bold my-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500">Contact</motion.h1>
+
+                <p className='text-xl text-center'>Are You Looking For Your Business Online Presence? I am here. 🙂</p>
             </div>
 
             <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
