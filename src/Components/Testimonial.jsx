@@ -25,6 +25,7 @@ const Testimonial = () => {
                         duration: 1,
                     }}
                     className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Testimonials</motion.h1>
+
             </div>
 
 
@@ -42,6 +43,8 @@ const Testimonial = () => {
                             testimonial={testimonial}
                         >
                             <div className="max-w-[450px] mx-auto">
+
+                                <p className="text-xl text-center py-5">What my Clients are saying?</p>
 
                                 <motion.blockquote
                                     initial={{ y: 200, opacity: 0 }}
