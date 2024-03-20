@@ -44,7 +44,7 @@ const Testimonial = () => {
                         >
                             <div className="max-w-[450px] mx-auto">
 
-                                <p className="text-xl text-center py-5">What my Clients are saying?</p>
+                                <p className="text-xl text-center font-bold py-5">What my Clients are saying?</p>
 
                                 <motion.blockquote
                                     initial={{ y: 200, opacity: 0 }}
