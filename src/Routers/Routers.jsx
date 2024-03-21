@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     element: <Dashboard></Dashboard>,
     children: [
       {
-        path: 'project',
+        path: 'addProject',
         element: <AddProject></AddProject>
       }
     ]
