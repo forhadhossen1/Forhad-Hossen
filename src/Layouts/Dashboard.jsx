@@ -28,7 +28,7 @@ const Dashboard = () => {
                     </ul>
                     <ul className="pt-4 pb-2 space-y-1 text-sm">
                         <li>
-                            <NavLink to='/home' className="flex items-center p-2 text-lg gap-2"><FaHome /> Home </NavLink>
+                            <NavLink to='/' className="flex items-center p-2 text-lg gap-2"><FaHome /> Home </NavLink>
                         </li>
                     </ul>
                 </div>
