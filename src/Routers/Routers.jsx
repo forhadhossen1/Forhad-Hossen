@@ -4,6 +4,8 @@ import Layouts from "../Layouts/Layouts";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
+import Dashboard from "../Layouts/Dashboard";
+import AddProject from "../Pages/Dashboard/AddProject";
 
 
 const router = createBrowserRouter([
@@ -29,6 +31,16 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: 'dashboard',
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: 'project',
+        element: <AddProject></AddProject>
+      }
+    ]
+  }
 ]);
 
 export default router
