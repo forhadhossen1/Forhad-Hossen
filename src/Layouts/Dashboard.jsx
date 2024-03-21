@@ -16,13 +16,13 @@ const Dashboard = () => {
                             <NavLink to='/dashboard/addProject' className="flex items-center p-2 text-lg gap-2"><GoProjectSymlink /> Add Project</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard/addProject' className="flex items-center p-2 text-lg gap-2"><FaThinkPeaks /> Add Testimonials</NavLink>
+                            <NavLink to='/dashboard/addTestimonials' className="flex items-center p-2 text-lg gap-2"><FaThinkPeaks /> Add Testimonials</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard/addProject' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageHistory /> Manage Project</NavLink>
+                            <NavLink to='/dashboard/manageProject' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageHistory /> Manage Project</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard/addProject' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageAccounts /> Manage Testimonials</NavLink>
+                            <NavLink to='/dashboard/manageTestimonials' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageAccounts /> Manage Testimonials</NavLink>
                         </li>
 
                     </ul>
