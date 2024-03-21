@@ -5,7 +5,8 @@ const useTestimonial = () => {
     const [testimonials, setTestimonials] = useState([]);
     const [loading, setLoading] = useState([true]);
 
-    fetch('testimonial.json')
+    // fetch('testimonial.json')
+    fetch('http://localhost:5000/testimonials')
         .then(res => res.json())
         .then(data => {
             setTestimonials(data);
