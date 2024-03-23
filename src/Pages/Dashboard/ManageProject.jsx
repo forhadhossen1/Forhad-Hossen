@@ -46,13 +46,13 @@ const ManageProject = () => {
                     <table className="table w-full">
                         {/* head */}
                         <thead>
-                            <tr>
+                            <tr className="text-black">
                                 <th>
-                                    #
+                                    No:
                                 </th>
                                 <th>Image</th>
-                                <th>Item Name</th>
-                                <th>Price</th>
+                                <th>Project Name</th>
+                                <th>Live Link</th>
                                 <th>Update</th>
                                 <th>Delete</th>
                             </tr>
@@ -76,7 +76,7 @@ const ManageProject = () => {
                                         {project.ProjectName}
                                     </td>
                                     <td>
-                                        ${project.LiveLinki}
+                                        {project.LiveLink}
                                     </td>
                                     <td>
                                         {/* <Link to={`/dashboard/updateItem/${item._id}`}> */}

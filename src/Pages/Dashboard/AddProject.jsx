@@ -32,7 +32,7 @@ const AddProject = () => {
                 Swal.fire({
                     position: "middel",
                     icon: "success",
-                    title: "Testimonials added",
+                    title: "Project added",
                     showConfirmButton: false,
                     timer: 1000
                   });
