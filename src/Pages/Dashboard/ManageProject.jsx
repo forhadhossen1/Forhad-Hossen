@@ -24,7 +24,7 @@ const ManageProject = () => {
                     //refetch to update the ui
                     Swal.fire({
                         title: "Deleted!",
-                        text: `${project.name} has been deleted`,
+                        text: `${project.ProjectName} has been deleted`,
                         icon: "success"
                     });
                     refetch()
@@ -82,7 +82,7 @@ const ManageProject = () => {
                                     <td>
                                         <Link to={`/dashboard/updateProject/${project._id}`}>
                                             <button className="btn text-white bg-orange-500"><FaEdit></FaEdit></button>
-                                            </Link>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button onClick={() => handleDeleteProject(project)} className="btn text-white bg-red-700"><FaTrashAlt></FaTrashAlt></button>

@@ -8,7 +8,9 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 const UpdateProject = () => {
     const { register, handleSubmit } = useForm()
     const axiosPublic = useAxiosPublic();
-    const { ProjectName, ProjectDescription, GitHubLink, LiveLink, Image, _id } = useLoaderData();
+    const { ProjectName, ProjectDescription, GitHubLink, LiveLink, _id } = useLoaderData();
+
+    console.log(ProjectDescription, ProjectName)
 
     const onSubmit = async (data) => {
         console.log(data)
@@ -29,8 +31,8 @@ const UpdateProject = () => {
                 Image: res.data.data.display_url
             }
             const projectTopic = await axiosPublic.patch(`/project/${_id}`, project);
-            console.log(projectTopic);
-            if (projectTopic.data.insertedId) {
+            console.log(projectTopic.data);
+            if (projectTopic.data.modifiedCount > 0) {
                 Swal.fire({
                     position: "middel",
                     icon: "success",
@@ -84,7 +86,7 @@ const UpdateProject = () => {
                     </div>
 
                     <div>
-                        <input defaultValue={Image} type="file" {...register("image", { required: true })} className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
+                        <input  type="file" {...register("image", { required: true })} className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
                     </div>
 
                     {/* <input  className="btn btn-block" type="submit" /> */}
