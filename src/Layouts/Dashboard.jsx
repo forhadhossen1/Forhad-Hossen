@@ -34,7 +34,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className='flex-1 m-5 '>
+            <div className='flex-1 p-6 bg-gradient-to-r from-gray-700 to-gray-900'>
                 <Outlet></Outlet>
             </div>
 
