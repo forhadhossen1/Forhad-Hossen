@@ -2,7 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import logo from '../assets/logo2.png'
 import { GoProjectSymlink } from "react-icons/go";
 import { FaThinkPeaks } from "react-icons/fa6";
-import { MdOutlineManageAccounts, MdOutlineManageHistory } from "react-icons/md";
+import { MdOutlineManageHistory } from "react-icons/md";
 import { FaHome } from 'react-icons/fa';
 const Dashboard = () => {
     return (
@@ -21,10 +21,6 @@ const Dashboard = () => {
                         <li>
                             <NavLink to='/dashboard/manageProject' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageHistory /> Manage Project</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/dashboard/manageTestimonials' className="flex items-center p-2 text-lg gap-2"><MdOutlineManageAccounts /> Manage Testimonials</NavLink>
-                        </li>
-
                     </ul>
                     <ul className="pt-4 pb-2 space-y-1 text-sm">
                         <li>
