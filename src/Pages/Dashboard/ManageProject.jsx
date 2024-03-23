@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import useProject from "../../Hooks/useProject";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
@@ -5,6 +6,33 @@ import { FaEdit, FaTrashAlt } from "react-icons/fa";
 const ManageProject = () => {
     const [projects, refetch] = useProject();
     const axiosPublic = useAxiosPublic();
+    const handleDeleteProject = (project) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                const res = await axiosPublic.delete(`/project/${project._id}`)
+                console.log(res.data);
+                if (res.data.deletedCount > 0) {
+                    //refetch to update the ui
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: `${project.name} has been deleted`,
+                        icon: "success"
+                    });
+                    refetch()
+                }
+            }
+        })
+    }
+
+
     return (
         <div>
             <h2 className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Manage Project</h2>
@@ -52,11 +80,11 @@ const ManageProject = () => {
                                     </td>
                                     <td>
                                         {/* <Link to={`/dashboard/updateItem/${item._id}`}> */}
-                                            <button className="btn text-white bg-orange-500"><FaEdit></FaEdit></button>
+                                        <button className="btn text-white bg-orange-500"><FaEdit></FaEdit></button>
                                         {/* </Link> */}
                                     </td>
                                     <td>
-                                        <button onClick={() => handleDeleteItem(item)} className="btn text-white bg-red-700"><FaTrashAlt></FaTrashAlt></button>
+                                        <button onClick={() => handleDeleteProject(project)} className="btn text-white bg-red-700"><FaTrashAlt></FaTrashAlt></button>
                                     </td>
                                 </tr>)
                             }
