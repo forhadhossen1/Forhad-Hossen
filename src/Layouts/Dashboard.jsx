@@ -8,7 +8,7 @@ const Dashboard = () => {
     return (
         <div className=" flex max-w-screen-xl mx-auto">
             <div className="p-2 space-x-4 w-64 min-h-[100vh] bg-gray-900">
-                <img src={logo} alt="" className=" " />
+                <img src={logo} alt="" className="w-52 mx-auto pt-5" />
 
                 <div className="divide-y my-5">
                     <ul className="pt-2 pb-4 space-y-1 text-sm">
@@ -34,7 +34,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className='flex-1'>
+            <div className='flex-1 m-5 '>
                 <Outlet></Outlet>
             </div>
 
