@@ -34,7 +34,7 @@ const AddProject = () => {
     };
 
     return (
-        <div className="">
+        <div className="py-12">
             <h2 className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Add Project</h2>
 
             <div>
