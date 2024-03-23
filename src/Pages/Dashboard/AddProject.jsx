@@ -10,13 +10,46 @@ const AddProject = () => {
 
             <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("firstName")} />
-                    <select {...register("gender")}>
-                        <option value="female">female</option>
-                        <option value="male">male</option>
-                        <option value="other">other</option>
-                    </select>
-                    <input type="submit" />
+                    <div className="form-control w-full ">
+                        <label className="label">
+                            <span className="label-text font-bold">Project Name*</span>
+                        </label>
+                        <input {...register("ProjectName", { required: true })}
+                            type="text" placeholder="Project Name" className="input input-bordered w-full " />
+
+                    </div>
+                    <div className="felx-col md:flex gap-6">
+                        <div className="form-control w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold">GitHub Link*</span>
+                            </label>
+                            <input {...register("GitHubLink", { required: true })}
+                                type="text" placeholder="GitHub Link" className="input input-bordered w-full " />
+                        </div>
+
+                        <div className="form-control w-full md:w-1/2">
+                            <label className="label">
+                                <span className="label-text font-bold">Live Link*</span>
+                            </label>
+                            <input {...register("LiveLink", { required: true })}
+                                type="text" placeholder="Recipe Live Link" className="input input-bordered w-full " />
+                        </div>
+                    </div>
+
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text font-bold">Project Description</span>
+                        </label>
+                        <textarea {...register("ProjectDescription")}
+                            className="textarea textarea-bordered h-24" placeholder="Project Description"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="file" {...register("image", { required: true })} className="file-input file-input-bordered file-input-warning w-full max-w-xs" />
+                    </div>
+
+                    {/* <input  className="btn btn-block" type="submit" /> */}
+                    <button className="btn btn-block bg-gradient-to-r from-orange-400 to-red-600" >Add Project</button>
                 </form>
             </div>
         </div>
