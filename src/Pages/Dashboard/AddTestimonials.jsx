@@ -17,16 +17,15 @@ const AddTestimonials = () => {
         });
         // console.log(res.data);
         if (res.data.success) {
-            const project = {
-                ProjectName: data.ProjectName,
-                GitHubLink: data.GitHubLink,
-                LiveLink: data.LiveLink,
-                ProjectDescription: data.ProjectDescription,
-                Image: res.data.data.display_url
+            const testimonial = {
+                name: data.name,
+                work: data.work,
+                details: data.details,
+                image: res.data.data.display_url
             }
-            const projectTopic = await axiosPublic.post('/project', project);
-            console.log(projectTopic);
-            if (projectTopic.data.insertedId) {
+            const testimonialsTopic = await axiosPublic.post('/testimonials', testimonial);
+            console.log(testimonialsTopic);
+            if (testimonialsTopic.data.insertedId) {
                 alert(' Iam success')
             }
         }
@@ -34,41 +33,32 @@ const AddTestimonials = () => {
     return (
         <div>
             <div className="py-12">
-                <h2 className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Add Project</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Add Testimonials</h2>
 
                 <div>
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                         <div className="form-control w-full ">
                             <label className="label">
-                                <span className="label-text font-bold text-black">Project Name*</span>
+                                <span className="label-text font-bold text-black">Name*</span>
                             </label>
-                            <input {...register("ProjectName", { required: true })}
-                                type="text" placeholder="Project Name" className="input input-bordered w-full text-black" />
+                            <input {...register("name", { required: true })}
+                                type="text" placeholder="Name" className="input input-bordered w-full text-black" />
 
                         </div>
-                        <div className="felx-col md:flex gap-6">
-                            <div className="form-control w-1/2 ">
-                                <label className="label">
-                                    <span className="label-text font-bold text-black">GitHub Link*</span>
-                                </label>
-                                <input {...register("GitHubLink", { required: true })}
-                                    type="text" placeholder="GitHub Link" className="input input-bordered w-full text-black" />
-                            </div>
+                        <div className="form-control w-full ">
+                            <label className="label">
+                                <span className="label-text font-bold text-black">Work*</span>
+                            </label>
+                            <input {...register("work", { required: true })}
+                                type="text" placeholder="Work" className="input input-bordered w-full text-black" />
 
-                            <div className="form-control w-full md:w-1/2">
-                                <label className="label">
-                                    <span className="label-text font-bold text-black">Live Link*</span>
-                                </label>
-                                <input {...register("LiveLink", { required: true })}
-                                    type="text" placeholder="Live Link" className="input input-bordered w-full text-black" />
-                            </div>
                         </div>
 
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text font-bold text-black">Project Description</span>
+                                <span className="label-text font-bold text-black">Details</span>
                             </label>
-                            <textarea {...register("ProjectDescription")}
+                            <textarea {...register("details")}
                                 className="textarea textarea-bordered h-24 text-black" placeholder="Project Description"></textarea>
                         </div>
 
@@ -77,7 +67,7 @@ const AddTestimonials = () => {
                         </div>
 
                         {/* <input  className="btn btn-block" type="submit" /> */}
-                        <button className="btn btn-block bg-gradient-to-r from-purple-600 to-pink-600 border-none text-black" >Add Project</button>
+                        <button className="btn btn-block bg-gradient-to-r from-purple-600 to-pink-600 border-none text-black" >Add Testimonials</button>
                     </form>
                 </div>
             </div>
