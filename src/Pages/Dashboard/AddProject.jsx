@@ -15,7 +15,7 @@ const AddProject = () => {
                             <span className="label-text font-bold text-black">Project Name*</span>
                         </label>
                         <input {...register("ProjectName", { required: true })}
-                            type="text" placeholder="Project Name" className="input input-bordered w-full " />
+                            type="text" placeholder="Project Name" className="input input-bordered w-full text-black" />
 
                     </div>
                     <div className="felx-col md:flex gap-6">
@@ -24,7 +24,7 @@ const AddProject = () => {
                                 <span className="label-text font-bold text-black">GitHub Link*</span>
                             </label>
                             <input {...register("GitHubLink", { required: true })}
-                                type="text" placeholder="GitHub Link" className="input input-bordered w-full " />
+                                type="text" placeholder="GitHub Link" className="input input-bordered w-full text-black" />
                         </div>
 
                         <div className="form-control w-full md:w-1/2">
@@ -32,7 +32,7 @@ const AddProject = () => {
                                 <span className="label-text font-bold text-black">Live Link*</span>
                             </label>
                             <input {...register("LiveLink", { required: true })}
-                                type="text" placeholder="Recipe Live Link" className="input input-bordered w-full " />
+                                type="text" placeholder="Live Link" className="input input-bordered w-full text-black" />
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@ const AddProject = () => {
                             <span className="label-text font-bold text-black">Project Description</span>
                         </label>
                         <textarea {...register("ProjectDescription")}
-                            className="textarea textarea-bordered h-24" placeholder="Project Description"></textarea>
+                            className="textarea textarea-bordered h-24 text-black" placeholder="Project Description"></textarea>
                     </div>
 
                     <div>
