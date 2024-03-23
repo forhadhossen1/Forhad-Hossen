@@ -16,7 +16,21 @@ const AddProject = () => {
                 'content-type': 'multipart/form-data'
             }
         });
-        console.log(res.data);
+        // console.log(res.data);
+        if(res.data.success){
+            const project = {
+                ProjectName : data.ProjectName,
+                GitHubLink : data.GitHubLink,
+                LiveLink : data.LiveLink,
+                ProjectDescription : data.ProjectDescription,
+                image : res.data.data.display_url
+            }
+            const projectTopic = await axiosPublic.post('/project', project);
+            console.log(projectTopic);
+            if(projectTopic.data.insertedId){
+                alert(' Iam success')
+            }
+        }
     };
 
     return (
