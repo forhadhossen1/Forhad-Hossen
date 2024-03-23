@@ -8,6 +8,7 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 const UpdateProject = () => {
     const { register, handleSubmit } = useForm()
     const axiosPublic = useAxiosPublic();
+
     const { ProjectName, ProjectDescription, GitHubLink, LiveLink, _id } = useLoaderData();
 
     console.log(ProjectDescription, ProjectName)
@@ -86,7 +87,7 @@ const UpdateProject = () => {
                     </div>
 
                     <div>
-                        <input  type="file" {...register("image", { required: true })} className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
+                        <input  type="file"  {...register("image", { required: true })} className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
                     </div>
 
                     {/* <input  className="btn btn-block" type="submit" /> */}
