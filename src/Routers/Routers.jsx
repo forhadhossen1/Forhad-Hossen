@@ -9,6 +9,7 @@ import AddProject from "../Pages/Dashboard/AddProject";
 import AddTestimonials from "../Pages/Dashboard/AddTestimonials";
 import ManageProject from "../Pages/Dashboard/ManageProject";
 import ManageTestimonials from "../Pages/Dashboard/ManageTestimonials";
+import UpdateProject from "../Pages/Dashboard/UpdateProject";
 
 
 const router = createBrowserRouter([
@@ -52,7 +53,12 @@ const router = createBrowserRouter([
       },
       {
         path: 'manageTestimonials',
-        element : <ManageTestimonials></ManageTestimonials>
+        element: <ManageTestimonials></ManageTestimonials>
+      },
+      {
+        path: 'updataProject',
+        element: <UpdateProject></UpdateProject>,
+        loader: ({ params }) => fetch(`http://localhost:5000/project/${params.id}`)
       }
     ]
   }

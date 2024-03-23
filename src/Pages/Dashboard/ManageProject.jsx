@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import useProject from "../../Hooks/useProject";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ManageProject = () => {
     const [projects, refetch] = useProject();
@@ -79,9 +80,9 @@ const ManageProject = () => {
                                         {project.LiveLink}
                                     </td>
                                     <td>
-                                        {/* <Link to={`/dashboard/updateItem/${item._id}`}> */}
-                                        <button className="btn text-white bg-orange-500"><FaEdit></FaEdit></button>
-                                        {/* </Link> */}
+                                        <Link to={`/dashboard/updateProject/${project._id}`}>
+                                            <button className="btn text-white bg-orange-500"><FaEdit></FaEdit></button>
+                                            </Link>
                                     </td>
                                     <td>
                                         <button onClick={() => handleDeleteProject(project)} className="btn text-white bg-red-700"><FaTrashAlt></FaTrashAlt></button>
