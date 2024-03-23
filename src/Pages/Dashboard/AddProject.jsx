@@ -23,7 +23,7 @@ const AddProject = () => {
                 GitHubLink : data.GitHubLink,
                 LiveLink : data.LiveLink,
                 ProjectDescription : data.ProjectDescription,
-                image : res.data.data.display_url
+                Image : res.data.data.display_url
             }
             const projectTopic = await axiosPublic.post('/project', project);
             console.log(projectTopic);
