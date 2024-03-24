@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index }) => {
                             ease: "easeIn",
                             duration: 1,
                         }}
-                        className="p-3 flex-1">
+                        className="p-3 ">
                         <div className="border-8 border-purple-600 p-20 md:p-36 relative w-[200px] md:max-w-[350px]">
                         </div>
                         <div className="absolute -mt-56 md:-mt-80 ml-6">

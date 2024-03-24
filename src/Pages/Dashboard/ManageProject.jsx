@@ -39,7 +39,7 @@ const ManageProject = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Manage Project</h2>
 
             <div className="text-3xl font-bold md:flex justify-btween pb-5">
-                <h2>Total Items :{projects.length}</h2>
+                <h2 className="py-8">Total Project : {projects.length}</h2>
             </div>
 
             <div>

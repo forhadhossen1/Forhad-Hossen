@@ -9,6 +9,7 @@ import AddProject from "../Pages/Dashboard/AddProject";
 import AddTestimonials from "../Pages/Dashboard/AddTestimonials";
 import ManageProject from "../Pages/Dashboard/ManageProject";
 import UpdateProject from "../Pages/Dashboard/UpdateProject";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -36,7 +37,9 @@ const router = createBrowserRouter([
   },
   {
     path: 'dashboard',
-    element: <Dashboard></Dashboard>,
+    element: <PrivateRoute>
+      <Dashboard />
+    </PrivateRoute>,
     children: [
       {
         path: 'addProject',
@@ -50,7 +53,7 @@ const router = createBrowserRouter([
         path: 'manageProject',
         element: <ManageProject></ManageProject>
       },
-      
+
       {
         path: 'updateProject/:id',
         element: <UpdateProject></UpdateProject>,
