@@ -8,7 +8,6 @@ import Dashboard from "../Layouts/Dashboard";
 import AddProject from "../Pages/Dashboard/AddProject";
 import AddTestimonials from "../Pages/Dashboard/AddTestimonials";
 import ManageProject from "../Pages/Dashboard/ManageProject";
-import ManageTestimonials from "../Pages/Dashboard/ManageTestimonials";
 import UpdateProject from "../Pages/Dashboard/UpdateProject";
 
 

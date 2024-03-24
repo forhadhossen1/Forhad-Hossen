@@ -195,7 +195,7 @@ const About = () => {
                     opacity: { duration: 2 },
                     ease: "easeIn",
                     duration: 1,
-                }} className="py-12 text-lg md:text-xl -3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</motion.p>
+                }} className="py-12 text-lg md:text-xl p-3">Welcome to my web corner! I am Farhad, a professional MERN (MongoDB, Express.js, React, Node.js) stack developer. With a passion for building seamless and dynamic web applications, I specialize in turning innovative ideas into tangible reality. My expertise lies in developing MongoDB is potential for powerful data storage, Express.js for scalable server-side development, and React for creating intuitive user interfaces. Also I am able to work with any new technology.</motion.p>
 
 
             <motion.section

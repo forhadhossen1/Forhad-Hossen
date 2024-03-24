@@ -10,10 +10,11 @@ const Portfolio = () => {
                 <h1 className="text-4xl md:text-6xl text-center font-bold py-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Portfolio</h1>
 
                 {
-                    projects.map(project => (
+                    projects.map((project, index) => (
                         <ProjectCard
                             key={project._id}
                             project={project}
+                            index={index}
                         >
                         </ProjectCard>
                     ))
@@ -28,3 +29,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+// {index%2==0? <div>img text</div>: <div> text img</div>}
