@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MyProject = () => {
 
     const [projects] = useProject();
-    const firstFiveProject = projects.slice(0, 3);
+    const firstFiveProject = projects.slice(-3);
     return (
         <div className="max-w-screen-xl mx-auto mb-20">
             <motion.h1
