@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
 import aboutImage from "../../assets/heroPhoto.png"
-import skillPhoto from  "../../assets/Heroman2.png"
+import skillPhoto from "../../assets/Heroman2.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 import Footer from "../../Components/Footer";
 import { motion } from "framer-motion";
@@ -9,9 +9,26 @@ import { motion } from "framer-motion";
 const About = () => {
     return (
         <div className="pt-16 max-w-screen-xl mx-auto">
+
+
+            <div>
+                <motion.h1
+                    initial={{ x: -200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.9,
+                        x: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 2 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="text-4xl md:text-5xl font-bold text-center border-b-4 max-w-[350px] p-3 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">About me</motion.h1>
+
+            </div>
+
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12 p-3">
                 <div className="flex-1">
-                   
+
                     <motion.img
 
                         initial={{ x: -200, opacity: 0 }}
@@ -29,7 +46,7 @@ const About = () => {
 
                 <div className="flex-1">
 
-                <motion.h1
+                    <motion.h1
                         initial={{ x: -200, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{
@@ -80,16 +97,16 @@ const About = () => {
 
 
             <motion.section
-            initial={{ y: 200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-                delay: 0.9,
-                y: { type: "spring", stiffness: 30 },
-                opacity: { duration: 2 },
-                ease: "easeIn",
-                duration: 1,
-            }}
-            className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg">
+                initial={{ y: 200, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    delay: 0.9,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 2 },
+                    ease: "easeIn",
+                    duration: 1,
+                }}
+                className="p-3 py-6 bg-gray-800 w-full md:w-1/2 mx-auto rounded-lg">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
                         <blockquote className="max-w-lg text-lg italic font-medium text-center">"Everybody should learn to program a computer because it teaches you how to think__"</blockquote>
