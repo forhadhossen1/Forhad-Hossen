@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
 import aboutImage from "../../assets/heroPhoto.png"
+import skillPhoto from  "../../assets/Heroman2.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 import Footer from "../../Components/Footer";
 import { motion } from "framer-motion";
@@ -157,7 +158,7 @@ const About = () => {
                             duration: 1,
                         }}
                         className="text-4xl font-bold py-7 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-pink-500 pb-9">Skill....</motion.h1>
-                    <img src="https://i.ibb.co/syDfnV7/3.jpg" alt=" image" />
+                    <img src={skillPhoto} alt=" image" className="rounded-full" />
                 </div>
 
                 <div className="flex-1">

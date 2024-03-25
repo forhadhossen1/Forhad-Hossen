@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import herobg from '../assets/herobg.png';
-import heroman from '../assets/heroman.png';
+import heroman from '../assets/AboutStory.jpg';
 import { motion } from "framer-motion"
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -59,7 +59,7 @@ const Hero = () => {
                         <button className="btn btn-link text-blue-500"> Read More</button></Link> </motion.p>
                     </motion.div>
 
-                    <div className='flex'>
+                    <div className='flex gap-4'>
                         <div className='flex justify-center items-center gap-5'>
                             <div className='flex flex-col justify-center items-center mt-5'>
                                 <div className='w-5 h-5 rounded-full bg-violet-600'></div>
@@ -98,7 +98,7 @@ const Hero = () => {
                             ease: "easeIn",
                             duration: 1,
                         }}
-                        src={heroman} alt="heroman" className='w-1/2 md:w-full' />
+                        src={heroman} alt="heroman" className='w-1/2 md:w-[500px] rounded-full' />
                     </div>
 
                     <motion.div variants={sliderVariants} initial="initial" animate="animate" className='font-extrabold text-4xl md:text-7xl lg:text-[20vh] text-nowrap absolute bottom-0 opacity-5 text-gray-200 w-full md:w-1/2'>
