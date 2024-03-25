@@ -10,12 +10,14 @@ import AddTestimonials from "../Pages/Dashboard/AddTestimonials";
 import ManageProject from "../Pages/Dashboard/ManageProject";
 import UpdateProject from "../Pages/Dashboard/UpdateProject";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layouts></Layouts>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
