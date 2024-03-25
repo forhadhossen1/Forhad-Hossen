@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa6";
-import aboutImage from "../../assets/bulb.png"
+import aboutImage from "../../assets/heroPhoto.png"
 import { SiAxios, SiExpress, SiFirebase, SiFramer, SiGit, SiGithub, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiReactrouter, SiSass, SiTailwindcss } from "react-icons/si";
 import Footer from "../../Components/Footer";
 import { motion } from "framer-motion";
